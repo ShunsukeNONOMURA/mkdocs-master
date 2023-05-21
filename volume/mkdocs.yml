@@ -30,6 +30,7 @@ plugins:
   # 検索機能
   - search:
       lang: ja
+  - autolinks
   - awesome-pages
   - tags:
       tags_file: tag.md

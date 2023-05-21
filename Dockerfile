@@ -5,7 +5,6 @@ RUN apk update \
   && pip3 install --upgrade pip \
   && pip3 install mkdocs mkdocs-material plantuml-markdown python-markdown-math pygments pymdown-extensions
 
-RUN pip3 install python-markdown-math mkdocs-awesome-pages-plugin
-# RUN pip3 install mkdocs-table-reader-plugin
+RUN pip3 install python-markdown-math mkdocs-awesome-pages-plugin mkdocs-autolinks-plugin
 
 RUN mkdir -p /root/projects
