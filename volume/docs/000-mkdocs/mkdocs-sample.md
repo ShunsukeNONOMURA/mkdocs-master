@@ -9,7 +9,7 @@ tags:
 [Qiita](https://qiita.com/)や[Zenn](https://zenn.dev/)との互換性は特に調べていないので、外部サービスだと正しく表示されない可能性がある。タブやボタンを仕込むとPDF変換等の再利用性が下がるので、特殊な記述はあまりやらない方がよいかもしれない。
 
 ## 見出し
-![](./sample/section.png)
+![](./mkdocs-sample/mkdocs-sample-section.png)
 ※目次が崩れるので、画像を表示例とする。
 
 ```
@@ -170,33 +170,33 @@ console.log("HelloWorld! TypeScript.");
 ### ローカルリソース参照
 [stable diffusion webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) (model:sd-v1-4) で画像作成
 #### 簡易配置
-![](./sample/car-sd-v1-4.png)
+![](./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png)
 ```
-![](./sample/car-sd-v1-4.png)
+![](./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png)
 ```
 
 #### 横並べ
-<img src="./sample/car-sd-v1-4.png" width="20%"><img src="./sample/car-sd-v1-4.png" width="20%"><img src="./sample/car-sd-v1-4.png" width="20%">
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%"><img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%"><img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%">
 
 ```
-<img src="./sample/car-sd-v1-4.png" width="20%"><img src="./sample/car-sd-v1-4.png" width="20%"><img src="./sample/car-sd-v1-4.png" width="20%">
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%"><img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%"><img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%">
 ```
 
 #### 縦並べ
-<img src="./sample/car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
-<img src="./sample/car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
-<img src="./sample/car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
 <br>
 ```
-<img src="./sample/car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
-<img src="./sample/car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
-<img src="./sample/car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
+<img src="./mkdocs-sample/mkdocs-sample-car-sd-v1-4.png" width="20%" style="vertical-align:middle; display:block;"/>
 ```
 
 ### draw.io
-![](./sample/sample.dio.png)
+![](./mkdocs-sample/mkdocs-sample-sample-dio.dio.png)
 ```
-![](./sample/sample.dio.png)
+![](./mkdocs-sample/mkdocs-sample-sample-dio.dio.png)
 ```
 
 [https://www.drawio.com/](https://www.drawio.com/)  
@@ -253,7 +253,7 @@ end
 ## 動画
 ### ローカルリソース参照
 [stable diffusion webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) (text2video) で動画作成
-<video controls playsinline width="50%" autoplay loop muted="true" src="./sample/vid.mp4" type="video/mp4" >
+<video controls playsinline width="50%" autoplay loop muted="true" src="./mkdocs-sample/mkdocs-sample-vid.mp4" type="video/mp4" >
  Sorry, your browser doesn't support embedded videos.
 </video>
 
