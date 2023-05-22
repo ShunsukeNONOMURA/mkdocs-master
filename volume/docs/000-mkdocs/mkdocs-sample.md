@@ -156,6 +156,7 @@ console.log("HelloWorld! TypeScript.");
 ````
 
 ## 表
+### Markdown記法
 | 指定なし(環境依存) | 左揃え | センタリング | 右揃え |
 | - | :- | :-: | -: |
 | DDDDD DDDDD DDDDD | LLLLL LLLLL LLLLL | CCCCC CCCCC CCCCC | RRRRR RRRRR RRRRR |
@@ -165,6 +166,18 @@ console.log("HelloWorld! TypeScript.");
 | - | :- | :-: | -: |
 | DDDDD DDDDD DDDDD | LLLLL LLLLL LLLLL | CCCCC CCCCC CCCCC | RRRRR RRRRR RRRRR |
 ```
+
+### csv読み込み（自作マクロ）
+{{ csv2table('mkdocs-sample/mkdocs-sample-table.csv') }}
+
+
+\{\{ csv2table('mkdocs-sample/mkdocs-sample-table.csv') \}\}  
+記入例をブロックにすると\が表示されるのでブロックにしていない  
+
+- 相対パスで指定
+- 他環境だと基本的に使えないはず
+    - Markdown Preview Enhanced 上だと@import構文が楽
+- 自作なのでバグあるかも
 
 ## 画像
 ### ローカルリソース参照

@@ -34,6 +34,7 @@ plugins:
   - awesome-pages
   - tags:
       tags_file: tag.md
+  - macros
 # [拡張機能]
 markdown_extensions:
   # 目次

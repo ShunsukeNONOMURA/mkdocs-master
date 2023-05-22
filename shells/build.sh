@@ -1,1 +1,1 @@
-docker exec -i mkdocs /bin/ash -c "/usr/bin/mkdocs build"
+docker exec -i mkdocs /bin/ash -c "mkdocs build"

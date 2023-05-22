@@ -10,7 +10,7 @@ services:
     ports:
       - "48000:48000"
     working_dir: /root/projects/volume
-    command: /usr/bin/mkdocs serve
+    command: mkdocs serve
     restart: always
     volumes:
       - type: bind

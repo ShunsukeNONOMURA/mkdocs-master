@@ -61,14 +61,14 @@ MkDocsを導入検討した際の情報について記述する。
 ### 主な設定
 #### Dockerfile
 ```Dockerfile
-FROM alpine:3.12
+FROM python:3.11.0-alpine3.17
 
 RUN apk update \
   && apk add --no-cache gcc libc-dev python3 py3-pip python3-dev \
-  && pip3 install --upgrade pip \
-  && pip3 install mkdocs mkdocs-material plantuml-markdown python-markdown-math pygments pymdown-extensions
+  && pip install --upgrade pip \
+  && pip install mkdocs mkdocs-material plantuml-markdown python-markdown-math pygments pymdown-extensions
 
-RUN pip3 install python-markdown-math mkdocs-awesome-pages-plugin
+RUN pip install python-markdown-math mkdocs-awesome-pages-plugin mkdocs-autolinks-plugin mkdocs-macros-plugin
 
 RUN mkdir -p /root/projects
 ```
@@ -90,7 +90,7 @@ services:
     ports:
       - "48000:48000"
     working_dir: /root/projects/volume
-    command: /usr/bin/mkdocs serve
+    command: mkdocs serve
     restart: always
     volumes:
       - type: bind
@@ -124,6 +124,10 @@ volume/site/
             - ページメタデータ管理
         - [tags](https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/)
             - タグの追加
+        - [macros](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
+            - マクロ追加
+                - csv表示の自作マクロ作成
+                    - [mkdocs-table-reader-plugin](https://github.com/timvink/mkdocs-table-reader-plugin)が類似機能として既にあるが、pandas前提でインストール処理が重く、マクロ試作を行いたかったことから見送った
     - markdown_extensions
         - [pymdownx.superfences](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)
             - mermaid追加
