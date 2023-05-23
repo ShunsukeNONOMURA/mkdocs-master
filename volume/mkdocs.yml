@@ -115,7 +115,7 @@ extra:
       link: https://github.com/ShunsukeNONOMURA
       name: shunsuke_nonomura on Github
 extra_javascript: 
-  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 # [フッター] 著作権表示
 copyright: Copyright &copy; 2023 shunsuke_nonomura
 # ローカル環境で表示する場合はfalse、Webサーバー経由ならTrue。リソース参照のタグが変わるので気を付ける。
