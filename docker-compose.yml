@@ -7,8 +7,7 @@ services:
       dockerfile: Dockerfile
     tty: true
     stdin_open: true
-    ports:
-      - "48000:48000"
+    network_mode: "host"
     working_dir: /root/projects/volume
     command: mkdocs serve
     restart: always

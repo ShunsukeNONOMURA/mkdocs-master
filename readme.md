@@ -6,6 +6,7 @@ docker環境を前提とする。
 ドキュメント更新を確認する用のサイトプレビューを表示するところまで。
 ```
 git clone https://github.com/ShunsukeNONOMURA/mkdocs-master.git
+# volume/mkdocs.ymlでポートなどの設定確認
 docker compose up --build
 ```
 
